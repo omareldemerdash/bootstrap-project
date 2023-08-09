@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.XYZ/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top opacity-75">
+    <div class="container-fluid">
+      <a class="navbar-brand ps-3" href="#">
+        <img class="rounded-circle" src="images/logo1.jpg" alt="logo" width="70" height="70">
+      </a>
+      <a class="navbar-brand border-end px-3 fw-bold colored" href="#">GOOD</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-info active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-info" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown border border-info rounded">
+            <a class="nav-link text-info dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-info" href="#">CAIRO</a></li>
+              <li><a class="dropdown-item text-info" href="#">ALEX</a></li>
+              <li>
+                <hr class="dropdown-divider bg-info">
+              </li>
+              <li><a class="dropdown-item text-info" href="#">LUXOR</a></li>
+              <li><a class="dropdown-item text-info" href="#">ASWAN</a></li>
+              <li><a class="dropdown-item text-info" href="#">SHARM EL SHIKH</a></li>
+              <li><a class="dropdown-item text-info" href="#">EK GLALA</a></li>
+              <li><a class="dropdown-item text-info" href="#">MORE ...</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-info" href="#">About</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 border-info" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-info text-white ms-2" type="submit">Search</button>
+        </form>
+        <button class="btn btn-info text-white ms-3 mt-lg-0 mt-3" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">Login</button>
+        <!-- Modal -->
+
+      </div>
+  </nav>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-info">
+          <h1 class="modal-title text-light fs-5" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-info">
+          <div class="m-3">
+            <label for="exampleFormControlInput1" class="form-label ">Email address</label>
+            <input type="email" class="form-control border-info" id="exampleFormControlInput1">
+            <div class="form-text" id="basic-addon4">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="m-3">
+            <label for="inputPassword5" class="form-label">Password</label>
+            <input type="password" id="inputPassword5" class="form-control border-info"
+              aria-describedby="passwordHelpBlock">
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input bg-info" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked">Remmember me</label>
+          </div>
+
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <button type="button" class="btn btn-info text-light">Login</button>
+          <button type="button" class="btn btn-info text-light" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- icons -->
+  <div class="icons">
+    <ul class="icons-list">
+      <li class="item border-0"><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+      <li class="item border-0"><a href="#"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+      <li class="item border-0"><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+      <li class="item border-0"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li class="item border-0"><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+    </ul>
+  </div>
+  <!-- slider -->
+  <div id="carouselExampleCaptions" class="carousel slide slider" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/cairo/img1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block captions rounded">
+          <h5 class="fs-1">CAIRO</h5>
+          <p>We had such a great time in Egypt.</p>
+          <button class="btn btn-info text-light">Visit Us</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/aswan/img1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block captions rounded">
+          <h5 class="fs-1">ASWAN</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+          <button class="btn btn-info text-light">Visit Us</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/sharm/IMG-20230227-WA0036.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block captions rounded">
+          <h5 class="fs-1">SHARM EL SHIKH</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+          <button class="btn btn-info text-light">Visit Us</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/galalh/IMG-20230227-WA0039.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block captions rounded">
+          <h5 class="fs-1">EL GLALH</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+          <button class="btn btn-info text-light">Visit Us</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- welcome -->
+  <section class="welcome pb-3 gray">
+    <div class="welcome-content container-fluid p-4">
+      <h3 class="colored">WELCOME</h3>
+      <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dicta, non doloribus
+        expedita corporis aperiam iure, itaque corrupti fuga, ducimus ullam ea quidem illo. Voluptas id tenetur dolorum
+        dolorem autem?</p>
+      <button class="btn btn-light text-info fs-5">Learn more</button>
+    </div>
+  </section>
+
+  <!-- popular -->
+  <section class="popular border-top border-2 border-secondary-subtle pb-3 gray">
+    <div class="popular-title text-center my-3 py-5 text-white">
+      <h2>
+        Popular Destinations in Egypt
+      </h2>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item popular-item">
+        <h2 class="accordion-header ">
+          <button class="accordion-button box" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="false" aria-controls="collapseOne">
+            <h3 class="fs-5 colored">GIZA CITY</h3>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body box-content">
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
+            adds the appropriate classes that we use to style each element. These classes control the overall
+            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+            <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item popular-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button box" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+            aria-expanded="false" aria-controls="collapseTwo">
+            <h3 class="fs-5 colored">LUXOR CITY</h3>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body box-content">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+            plugin adds the appropriate classes that we use to style each element. These classes control the overall
+            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+            <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item popular-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button box" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+            aria-expanded="false" aria-controls="collapseThree">
+            <h3 class="fs-5 colored">SINAI PENINSULA</h3>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body box-content">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
+            adds the appropriate classes that we use to style each element. These classes control the overall
+            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+            <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- translate -->
+  <section class="translate border-top border-2 border-secondary-subtle pb-3 gray">
+    <div class="translate-title text-center text-white py-3 mt-3">
+      <h2>Translate From Arabic To English</h2>
+    </div>
+    <div class="translate-content container-fluid p-4">
+      <h3 class="text-white">Write and Translate <a href="#" class="text-dark text-decoration-none">Press Here</a></h3>
+      <div class="position-relative col-lg-1 col-2 copybtn">
+        <button type="button" id="btn" class="btn btn-light w-100">
+          Copy
+        </button>
+        <p class="position-absolute top-100 start-100 px-2" id="copytext">Copy to clipboard</p>
+        <p class="position-absolute top-100 start-100 px-2" id="hiddentext">Copied</p>
+      </div>
+
+      <textarea class="form-control mt-3" placeholder="translate" id="floatingTextarea2"
+        style="height: 120px"></textarea>
+
+
+    </div>
+  </section>
+
+  <section class="translate border-top border-2 border-secondary-subtle pb-3 gray">
+    <div class="translate-title text-center text-white py-3 mt-3">
+      <h2>Translate From Arabic To French</h2>
+    </div>
+    <div class="translate-content container-fluid p-4">
+      <h3 class="text-white">Write and Translate <a href="#" class="text-dark text-decoration-none">Press Here</a></h3>
+      <div class="position-relative col-lg-1 col-2 copybtn">
+        <button type="button" id="btn" class="btn btn-light w-100">
+          Copy
+        </button>
+        <p class="position-absolute top-100 start-100 px-2" id="copytext">Copy to clipboard</p>
+        <p class="position-absolute top-100 start-100 px-2" id="hiddentext">Copied</p>
+      </div>
+
+      <textarea class="form-control mt-3" placeholder="translate" id="floatingTextarea2"
+        style="height: 120px"></textarea>
+
+
+    </div>
+  </section>
+  <section class="translate border-top border-2 border-secondary-subtle pb-3 gray">
+    <div class="translate-title text-center text-white py-3 mt-3">
+      <h2>Translate From Arabic To German</h2>
+    </div>
+    <div class="translate-content container-fluid p-4">
+      <h3 class="text-white">Write and Translate <a href="#" class="text-dark text-decoration-none">Press Here</a></h3>
+      <div class="position-relative col-lg-1 col-2 copybtn">
+        <button type="button" id="btn" class="btn btn-light w-100">
+          Copy
+        </button>
+        <p class="position-absolute top-100 start-100 px-2" id="copytext">Copy to clipboard</p>
+        <p class="position-absolute top-100 start-100 px-2" id="hiddentext">Copied</p>
+      </div>
+
+      <textarea class="form-control mt-3" placeholder="translate" id="floatingTextarea2"
+        style="height: 120px"></textarea>
+
+
+    </div>
+  </section>
+  <!-- destinations -->
+  <section class="destination border-top border-2 border-secondary-subtle pb-3 gray">
+    <div class="dest-img">
+
+    </div>
+    <div class="destination-title text-center py-3">
+      <h2 class="colored">POPULAR DESTINATIONS IN EGYPT</h2>
+    </div>
+    <div class="container">
+      <div class="cards row pb-5">
+        <div class="col-lg-4 col-md-6 mt-5">
+          <div class="dest-card position-relative card m-auto px-2 h-100" style="width: 20rem;">
+            <img src="images/cairo/img3.jpg" class="card-img-top" style="height: 50vh;" alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="text col-6 text-info">
+                  <h5 class="card-title">CAIRO</h5>
+                  <p class="card-text">capital of egypt</p>
+                </div>
+                <a href="#" class="btn btn-info text-white col-6 h-25 z-3">Know More</a>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-5">
+          <div class="dest-card position-relative card m-auto px-2 h-100" style="width: 20rem;">
+            <img src="images/alex/IMG-20230227-WA0035.jpg" class="card-img-top" style="height: 50vh;" alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="text col-6 text-info">
+                  <h5 class="card-title">ALEXANDRIA</h5>
+                  <p class="card-text">The bride of miditerranean</p>
+                </div>
+                <a href="#" class="btn btn-info text-white col-6 h-25 z-3">Know More</a>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-5">
+          <div class="dest-card position-relative card m-auto px-2 h-100" style="width: 20rem;">
+            <img src="images/luxur/img5.jpg" class="card-img-top" style="height: 50vh;" alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="text col-6 text-info">
+                  <h5 class="card-title">LUXOR</h5>
+                  <p class="card-text">capital of ancient egypt</p>
+                </div>
+                <a href="#" class="btn btn-info text-white col-6 h-25 z-3">Know More</a>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-5">
+          <div class="dest-card position-relative card m-auto px-2 h-100" style="width: 20rem;">
+            <img src="images/aswan/img10.jpg" class="card-img-top" style="height: 50vh;" alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="text col-6 text-info">
+                  <h5 class="card-title">ASWAN</h5>
+                  <p class="card-text">nubean city in the south of egypt</p>
+                </div>
+                <a href="#" class="btn btn-info text-white col-6 h-25 z-3">Know More</a>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-5">
+          <div class="dest-card position-relative card m-auto px-2 h-100" style="width: 20rem;">
+            <img src="images/new cairo/IMG-20230227-WA0047.jpg" class="card-img-top" style="height: 50vh;" alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="text col-6 text-info">
+                  <h5 class="card-title">NEW CAPITAL</h5>
+                  <p class="card-text">The new adminstrative capital</p>
+                </div>
+                <a href="#" class="btn btn-info text-white col-6 h-25 z-3">Know More</a>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-5">
+          <div class="dest-card position-relative card m-auto px-2 h-100" style="width: 20rem;">
+            <img src="images/sharm/img2.jpg" class="card-img-top" style="height: 50vh;" alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="text col-6 text-info">
+                  <h5 class="card-title">SHARM EL SHIKH</h5>
+                  <p class="card-text">Beautiful city in egypt</p>
+                </div>
+                <a href="#" class="btn btn-info text-white col-6 h-25 z-3">Know More</a>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-5">
+          <div class="dest-card position-relative card m-auto px-2 h-100" style="width: 20rem;">
+            <img src="images/siwa/img1.jpg" class="card-img-top" style="height: 50vh;" alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="text col-6 text-info">
+                  <h5 class="card-title">SIWA</h5>
+                  <p class="card-text">Sunset Oasis</p>
+                </div>
+                <a href="#" class="btn btn-info text-white col-6 h-25 z-3">Know More</a>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-5">
+          <div class="dest-card position-relative card m-auto px-2 h-100" style="width: 20rem;">
+            <img src="images/Hurghada/zyanya-OMwEkftvQKs-unsplash.jpg" class="card-img-top" style="height: 50vh;"
+              alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="text col-6 text-info">
+                  <h5 class="card-title">HURGHADA</h5>
+                  <p class="card-text">City on the red sea</p>
+                </div>
+                <a href="#" class="btn btn-info text-white col-6 h-25 z-3">Know More</a>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="aswan-img">
+
+    </div>
+  </section>
+  <!-- thanks -->
+  <section class="thanks border-top border-2 border-secondary-subtle pb-3 gray">
+    <div class="thanks-title text-center py-3 mt-3">
+      <h2 class="colored">THANKS FOR</h2>
+    </div>
+    <div class="container">
+      <div class="row thanks-content">
+        <div
+          class="thanks-item col-lg-3 col-9 mt-5 position-relative d-flex align-content-between flex-wrap p-3 mx-auto rounded-4"
+          style="height: 60vh;">
+          <div class="overlay position-absolute top-0 start-0 opacity-75 w-100 h-100 rounded-4"></div>
+          <div class="title text-white z-3 pt-4">
+            <h3 class="fs-4">All thanks and appreciation</h3>
+            <p><i class="fa-regular fa-clock"></i> October 15, 2023</p>
+          </div>
+          <div class="footer text-white z-3">
+            <img class="rounded-circle w-25 border" src="images/trainer-1.jpg" alt="...">
+            <p>Eng John <br> Director of ui/ux</p>
+          </div>
+        </div>
+        <div
+          class="thanks-item col-lg-3 col-9 mt-5 position-relative d-flex align-content-between flex-wrap p-3 mx-auto rounded-4"
+          style="height: 60vh;">
+          <div class="overlay position-absolute top-0 start-0 opacity-75 w-100 h-100 rounded-4"></div>
+          <div class="title text-white z-3 pt-4">
+            <h3 class="fs-4">All thanks and appreciation</h3>
+            <p><i class="fa-regular fa-clock"></i> October 15, 2023</p>
+          </div>
+          <div class="footer text-white z-3">
+            <img class="rounded-circle w-25 border" src="images/trainer-2.jpg" alt="...">
+            <p>Eng John <br> Director of ui/ux</p>
+          </div>
+        </div>
+        <div
+          class="thanks-item col-lg-3 col-9 mt-5 position-relative d-flex align-content-between flex-wrap p-3 mx-auto rounded-4"
+          style="height: 60vh;">
+          <div class="overlay position-absolute top-0 start-0 opacity-75 w-100 h-100 rounded-4"></div>
+          <div class="title text-white z-3 pt-4">
+            <h3 class="fs-4">All thanks and appreciation</h3>
+            <p><i class="fa-regular fa-clock"></i> October 15, 2023</p>
+          </div>
+          <div class="footer text-white z-3">
+            <img class="rounded-circle w-25 border" src="images/trainer-3.jpg" alt="...">
+            <p>Eng John <br> Director of ui/ux</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- news -->
+  <section class="news border-top border-2 border-secondary-subtle pb-3 gray">
+    <div class="container">
+      <h2 class="news-title text-center pt-4 colored">
+        EGYPT NEWS
+      </h2>
+      <div class="news-content">
+        <div class="card my-4 mx-5 news-item">
+          <div class="row g-0">
+
+            <div class="col-md-8 news-text">
+              <div class="card-body p-5 overflow-hidden" style="height: 45vh;">
+                <h5 class="card-title fs-2">Podcast Title</h5>
+                <p class="card-text fs-6 text-secondary"><i class="fa-solid fa-user-group"></i>Mon, May 25th 2023</p>
+                <span class="d-block rounded-pill line"></span>
+                <p class="card-text pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste aliquam
+                  adipisci natus doloremque minima Lorem, ipsum dolor sit amet consectetur adipisicing elit facere illum
+                  nulla. Aliquam, quas? Quas laboriosam ducimus asperiores odio molestiae aliquid magni voluptatum odit
+                  ex!</p>
+                <div class="row buttons mt-5">
+                  <button class="btn btn-sm col-2 btn-secondary border-0 mx-1"><i class="fa-solid fa-tag"></i>
+                    Podcast</button>
+                  <button class="btn btn-sm col-2 btn-secondary border-0 mx-1"><i class="fa-solid fa-clock"></i> 55
+                    mins</button>
+                  <button class="btn btn-sm col-3 btn-secondary border-0 mx-1 text-info newsbtn"><i
+                      class="fa-solid fa-play"></i> Play Episode</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 news-right">
+              <img src="images/galalh/IMG-20230227-WA0040.jpg"
+                class="img-fluid rounded-top news-img news-img-right w-100" style="height: 45vh;" alt="...">
+            </div>
+          </div>
+        </div>
+
+        <div class="card my-4 mx-5 news-item">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/Hurghada/ralf-schlegel-gGIaHmXcSp8-unsplash.jpg"
+                class="img-fluid rounded-top news-img news-img-left w-100" style="height: 45vh;" alt="...">
+            </div>
+            <div class="col-md-8 news-text">
+              <div class="card-body p-5 overflow-hidden" style="height: 45vh;">
+                <h5 class="card-title fs-2">Podcast Title</h5>
+                <p class="card-text fs-6 text-secondary"><i class="fa-solid fa-user-group"></i>Mon, May 25th 2023</p>
+                <span class="d-block rounded-pill line"></span>
+                <p class="card-text pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste aliquam
+                  adipisci natus doloremque minima Lorem, ipsum dolor sit amet consectetur adipisicing elit facere illum
+                  nulla. Aliquam, quas? Quas laboriosam ducimus asperiores odio molestiae aliquid magni voluptatum odit
+                  ex!</p>
+                <div class="row buttons mt-5">
+                  <button class="btn btn-sm col-2 btn-secondary border-0 mx-1"><i class="fa-solid fa-tag"></i>
+                    Podcast</button>
+                  <button class="btn btn-sm col-2 btn-secondary border-0 mx-1"><i class="fa-solid fa-clock"></i> 55
+                    mins</button>
+                  <button class="btn btn-sm col-3 btn-secondary border-0 mx-1 text-info newsbtn"><i
+                      class="fa-solid fa-play"></i> Play Episode</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="card my-4 mx-5 news-item">
+          <div class="row g-0">
+
+            <div class="col-md-8 news-text">
+              <div class="card-body p-5 overflow-hidden" style="height: 45vh;">
+                <h5 class="card-title fs-2">Podcast Title</h5>
+                <p class="card-text fs-6 text-secondary"><i class="fa-solid fa-user-group"></i>Mon, May 25th 2023</p>
+                <span class="d-block rounded-pill line"></span>
+                <p class="card-text pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste aliquam
+                  adipisci natus doloremque minima Lorem, ipsum dolor sit amet consectetur adipisicing elit facere illum
+                  nulla. Aliquam, quas? Quas laboriosam ducimus asperiores odio molestiae aliquid magni voluptatum odit
+                  ex!</p>
+                <div class="row buttons mt-5">
+                  <button class="btn btn-sm col-2 btn-secondary border-0 mx-1"><i class="fa-solid fa-tag"></i>
+                    Podcast</button>
+                  <button class="btn btn-sm col-2 btn-secondary border-0 mx-1"><i class="fa-solid fa-clock"></i> 55
+                    mins</button>
+                  <button class="btn btn-sm col-3 btn-secondary border-0 mx-1 text-info newsbtn"><i
+                      class="fa-solid fa-play"></i> Play Episode</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 news-right">
+              <img src="images/luxur/img2.jpg"
+                class="img-fluid rounded-top object-fit-fill news-img news-img-right w-100" style="height: 45vh;"
+                alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="card my-4 mx-5 news-item">
+          <div class="row g-0">
+            <div class="col-md-4 news-right">
+              <img src="images/siwa/img4.jpg" class="img-fluid rounded-top  news-img news-img-left w-100" alt="..."
+                style="height: 45vh;">
+            </div>
+            <div class="col-md-8 news-text">
+              <div class="card-body p-5 overflow-hidden" style="height: 45vh;">
+                <h5 class="card-title fs-2">Podcast Title</h5>
+                <p class="card-text fs-6 text-secondary"><i class="fa-solid fa-user-group"></i>Mon, May 25th 2023</p>
+                <span class="d-block rounded-pill line"></span>
+                <p class="card-text pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste aliquam
+                  adipisci natus doloremque minima Lorem, ipsum dolor sit amet consectetur adipisicing elit facere illum
+                  nulla. Aliquam, quas? Quas laboriosam ducimus asperiores odio molestiae aliquid magni voluptatum odit
+                  ex!</p>
+                <div class="row buttons mt-5">
+                  <button class="btn btn-sm col-2 btn-secondary border-0 mx-1"><i class="fa-solid fa-tag"></i>
+                    Podcast</button>
+                  <button class="btn btn-sm col-2 btn-secondary border-0 mx-1"><i class="fa-solid fa-clock"></i> 55
+                    mins</button>
+                  <button class="btn btn-sm col-3 btn-secondary border-0 mx-1 text-info newsbtn"><i
+                      class="fa-solid fa-play"></i> Play Episode</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- join us -->
+  <section class="join gray">
+    <div class="container">
+      <h2 class="colored text-center">JOIN US</h2>
+      <div class="row gy-5 text-center text-info py-4">
+        <div class="col-lg-2 col-md-5 col-8 bg-white rounded p-3 mx-auto join-item">
+          <h4>Subscribe Now</h4>
+
+          <a class="text-decoration-none text-info fs-5" href="#">
+            <img class="rounded-4 w-lg-50 w-sm-25  mt-4 join-img" src="images/twetter.jpg" alt="...">
+            <p class="pt-2 join-link">Go to link</p>
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-5 col-8 bg-white rounded p-3 mx-auto join-item">
+          <h4>Follow</h4>
+
+          <a class="text-decoration-none text-info fs-5" href="#">
+            <img class="rounded-4 w-lg-50 w-sm-25  mt-4 join-img" src="images/whats.jpg" alt="...">
+            <p class="pt-2 join-link">Go to link</p>
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-5 col-8 bg-white rounded p-3 mx-auto join-item">
+          <h4>Like the page</h4>
+
+          <a class="text-decoration-none text-info fs-5" href="#">
+            <img class="rounded-4 w-lg-50 w-sm-25  mt-4 join-img" src="images/in.jpg" alt="...">
+            <p class="pt-2 join-link">Go to link</p>
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-5 col-8 bg-white rounded p-3 mx-auto join-item">
+          <h4>Watch Videos</h4>
+
+          <a class="text-decoration-none text-info fs-5" href="#">
+            <img class="rounded-4 w-lg-50 w-sm-25  mt-4 join-img" src="images/insta.jpg" alt="...">
+            <p class="pt-2 join-link">Go to link</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="bg-info pb-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 text-center text-white p-3">
+          <div class="border-top border-bottom p-3">
+            <img src="images/logo2.png" class="rounded-circle footer-logo" width="70" height="70" alt="">
+            <span class="ps-1 fs-5">Good Company</span>
+          </div>
+          <ul class="p-3 footer-list">
+            <li>Tel: 000-000-000</li>
+            <li>Address: EGYPT</li>
+            <li>Fax: 000-000-000</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 text-center text-white p-3">
+          <div class="border-top border-bottom p-3">
+            <img src="images/logo2.png" class="rounded-circle footer-logo" width="70" height="70" alt="">
+            <span class="ps-1 fs-5">Important links</span>
+          </div>
+          <ul class="p-3 footer-list text-decoration-none">
+            <li><a href="#" class="text-decoration-none link-secondary">Visit Us</a></li>
+            <li><a href="#" class="text-decoration-none link-secondary">Take a look</a></li>
+            <li><a href="#" class="text-decoration-none link-secondary">Your health is more important</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 text-center text-white p-3">
+          <div class="border-top border-bottom p-3">
+            <img src="images/logo2.png" class="rounded-circle footer-logo" width="70" height="70" alt="">
+            <span class="ps-1 fs-5">Vision</span>
+          </div>
+          <ul class="p-3 footer-list">
+            <li>Services for all</li>
+            <li>Provide best services</li>
+            <li>You will be better than before</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-3 border-top border-bottom ">
+      <h4 class="colored">
+        COPYRIGHT &copy; 2023 OMAR ELDEMERDASH, GOOD COMPANY, ALL RIGHTS
+      </h4>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.XYZ/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.XYZ/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
